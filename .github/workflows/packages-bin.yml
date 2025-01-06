@@ -139,7 +139,7 @@ jobs:
             PSYCOPG_IMPL=binary
             PSYCOPG_TEST_DSN='dbname=postgres'
             PATH="$LIBPQ_BUILD_PREFIX/bin:$PATH"
-            LD_LIBRARY_PATH="$LIBPQ_BUILD_PREFIX/lib:$LIBPQ_BUILD_PREFIX/lib64"
+            LD_LIBRARY_PATH="$LIBPQ_BUILD_PREFIX/lib"
             PSYCOPG_TEST_WANT_LIBPQ_BUILD=">= ${{env.LIBPQ_VERSION}}"
             PSYCOPG_TEST_WANT_LIBPQ_IMPORT=">= ${{env.LIBPQ_VERSION}}"
 
