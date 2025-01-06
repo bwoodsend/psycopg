@@ -3,6 +3,7 @@
 # Build a modern version of libpq and depending libs from source on Centos 5, Alpine or macOS
 
 set -euo pipefail
+set -x
 
 postgres_version="${LIBPQ_VERSION}"
 openssl_version="${OPENSSL_VERSION}"
