@@ -32,3 +32,6 @@ for i in $(seq 10 -1 0); do
   echo "PostgreSQL service not ready, waiting a bit, attempts left: $i"
   sleep 5
 done
+
+# Remove the Homebrew libpq to avoid accidentally linking to it
+rm -rv /opt/homebrew/Cellar/postgresql@${PG_VERSION}/*/lib/postgresql/libpq*.dylib
